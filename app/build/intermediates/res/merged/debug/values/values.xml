@@ -297,8 +297,9 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="abrirfragment">Abrir</string>
-    <string name="action_sign_in">Ingreso</string>
+    <string name="action_sign_in_estudiante">Ingreso Estudiante</string>
     <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in_tutor">Ingreso Tutor</string>
     <string name="apellido">Apellido</string>
     <string name="app_name">Ingreso de Estudiante</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
