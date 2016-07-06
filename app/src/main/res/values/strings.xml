@@ -13,4 +13,20 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string name="usuario">Usuario</string>
+    <string name="clave">Contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="carrera">¿De qué carrera es tutor?</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="horario_disponible">Horarios Disponibles</string>
+    <string name="salir">Salir</string>
+    <string name="cerrar">Cerrar sesión</string>
+    <string name="abrirfragment">Abrir</string>
+    <string name="cerrarfragment">Cerrar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

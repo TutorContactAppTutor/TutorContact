@@ -19,9 +19,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.example.drmsoul.appestudiante.LoginActivity"
-            android:label="@string/app_name" >
+        <activity android:name="com.example.drmsoul.appestudiante.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,6 +27,15 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.drmsoul.appestudiante.registro" />
+        <activity android:name="com.example.drmsoul.appestudiante.PantallaPrincipalTutor" />
+        <activity android:name="com.example.drmsoul.appestudiante.horario_disponible" />
+        <activity
+            android:name="com.example.drmsoul.appestudiante.RegistroTutor"
+            android:parentActivityName="com.example.drmsoul.appestudiante.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.drmsoul.appestudiante.LoginActivity" />
+        </activity>
     </application>
 
 </manifest>

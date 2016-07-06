@@ -77,6 +77,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
                 if (id == R.id.login || id == EditorInfo.IME_NULL) {
+
                     attemptLogin();
                     return true;
                 }
@@ -88,7 +89,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                attemptLogin();
+                //attemptLogin();
+                Intent intent = new Intent(context,PantallaPrincipalTutor.class);
+                startActivity(intent);
             }
         });
 
@@ -153,6 +156,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 
 
+    public void registrarTutor(View v) {
+        Intent intent = new Intent(context, RegistroTutor.class);
+        startActivity(intent);
+    }
 
     private void attemptLogin() {
         if (mAuthTask != null) {

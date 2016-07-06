@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.drmsoul.appestudiante.RegistroTutor">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:paddingLeft="-25dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
+            >
+
+            <EditText
+
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:id="@+id/txtNombre"
+                android:hint="@string/nombre"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="36dp"
+                android:textSize="@dimen/activity_vertical_margin"
+                />
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:id="@+id/txtApellido"
+                android:hint="@string/apellido"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="36dp"
+                android:textSize="@dimen/activity_vertical_margin"
+                />
+
+            <EditText
+
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:id="@+id/txtUsuario"
+                android:hint="@string/usuario"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="36dp"
+                android:textSize="@dimen/activity_vertical_margin"
+                />
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/txtPassword"
+                android:hint="@string/clave"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="36dp"
+                android:textSize="@dimen/activity_vertical_margin"
+                />
+
+            <Spinner
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnCarrera"
+                android:textAlignment="center"
+                android:hint="@string/carrera"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:layout_width="220dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:text="@string/registrarse"
+                android:id="@+id/btnRegistro"
+                android:layout_marginBottom="20dp"
+                android:background="@color/azul"
+                android:textColor="@color/blanco"
+                android:textAllCaps="false"
+                android:textSize="@dimen/activity_vertical_margin"
+                android:onClick="registrarTutor"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

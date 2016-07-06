@@ -79,13 +79,22 @@
                 android:text="@string/action_sign_in"
                 android:textStyle="bold" />
 
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Registro"
+                android:text="Registro Estudiante"
                 android:id="@+id/reg_button"
                 android:layout_gravity="center_horizontal"
                 android:onClick="registrar" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro Tutor"
+                android:id="@+id/reg_tutor_button"
+                android:layout_gravity="center_horizontal"
+                android:onClick="registrarTutor" />
 
         </LinearLayout>
     </ScrollView>
