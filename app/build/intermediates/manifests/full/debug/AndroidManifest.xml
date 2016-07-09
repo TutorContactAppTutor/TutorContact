@@ -36,6 +36,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.drmsoul.appestudiante.LoginActivity" />
         </activity>
+        <activity android:name="com.example.drmsoul.appestudiante.PantallaPrincipalEstudiante" />
     </application>
 
 </manifest>

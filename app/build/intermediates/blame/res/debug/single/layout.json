@@ -40,12 +40,12 @@
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_navigation_menu_item.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/select_dialog_item_material.xml"
-    },
-    {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
@@ -66,6 +66,10 @@
     {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/activity_pantalla_principal_estudiante.xml",
+        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/src/main/res/layout/activity_pantalla_principal_estudiante.xml"
     },
     {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
@@ -152,20 +156,20 @@
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_popup_menu_header_item_layout.xml"
-    },
-    {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_layout_tab_text.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_template_big_media_narrow.xml"
+        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",

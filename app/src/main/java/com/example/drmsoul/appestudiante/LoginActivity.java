@@ -149,6 +149,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * errors are presented and no actual login attempt is made.
      */
 
+    public void ingresoEstudiante(View v) {
+        Intent intent = new Intent(context, PantallaPrincipalEstudiante.class);
+        startActivity(intent);
+    }
 
     public void registrar(View v) {
         Intent intent = new Intent(context, registro.class);
