@@ -1,38 +1,38 @@
 [
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+        "merged": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_spinner.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_default.xml"
+        "merged": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_color_highlight_material.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_track.xml"
+        "merged": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_btn_checkable.xml"
+        "merged": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_default.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_seek_thumb.xml"
+        "merged": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_edittext.xml"
+        "merged": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_track.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_spinner.xml"
+        "merged": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_edittext.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_thumb.xml"
+        "merged": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_color_highlight_material.xml"
+        "merged": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/home/nathali/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_thumb.xml"
     }
 ]

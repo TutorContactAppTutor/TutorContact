@@ -2,13 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.drmsoul.appestudiante.SabadoFragment">
+    tools:context=".Fragment_Horario_Disponible">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Sabado" />
+        android:id="@+id/horariolist"
+        android:layout_gravity="start">
+
+    </ListView>
 
 </FrameLayout>

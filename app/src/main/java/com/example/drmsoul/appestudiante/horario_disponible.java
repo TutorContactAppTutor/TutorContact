@@ -27,7 +27,7 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
     private android.support.v4.app.FragmentTransaction fragmentTransaction;
     private FragmentManager fragmentManager;
 
-
+    private Fragment_Horario_Disponible fragmentoHorario;
 
 
     @Override
@@ -35,6 +35,8 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horario_disponible);
 
+
+        fragmentoHorario = new Fragment_Horario_Disponible();
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawerlayout);
 
@@ -76,6 +78,7 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
         fragmentManager = getSupportFragmentManager();
 
         loadSelection(0);
+        drawerLayout.openDrawer(navList);
 
     }
 
@@ -84,45 +87,39 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
 
         switch (i){
             case 0:
-                LunesFragment fragmentoLunes = new LunesFragment();
+
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentholder,fragmentoLunes);
+                fragmentTransaction.replace(R.id.fragmentholder,fragmentoHorario);
                 fragmentTransaction.commit();
                 break;
             case 1:
-                MartesFragment fragmentoMartes = new MartesFragment();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentholder,fragmentoMartes);
+                fragmentTransaction.replace(R.id.fragmentholder,fragmentoHorario);
                 fragmentTransaction.commit();
                 break;
             case 2:
-                MiercolesFragment fragmentoMiercoles = new MiercolesFragment();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentholder,fragmentoMiercoles);
+                fragmentTransaction.replace(R.id.fragmentholder,fragmentoHorario);
                 fragmentTransaction.commit();
                 break;
             case 3:
-                JuevesFragment fragmentoJueves = new JuevesFragment();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentholder,fragmentoJueves);
+                fragmentTransaction.replace(R.id.fragmentholder,fragmentoHorario);
                 fragmentTransaction.commit();
                 break;
             case 4:
-                ViernesFragment fragmentoViernes = new ViernesFragment();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentholder,fragmentoViernes);
+                fragmentTransaction.replace(R.id.fragmentholder,fragmentoHorario);
                 fragmentTransaction.commit();
                 break;
             case 5:
-                SabadoFragment fragmentoSabado = new SabadoFragment();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentholder,fragmentoSabado);
+                fragmentTransaction.replace(R.id.fragmentholder,fragmentoHorario);
                 fragmentTransaction.commit();
                 break;
             case 6:
-                DomingoFragment fragmentoDomingo = new DomingoFragment();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentholder,fragmentoDomingo);
+                fragmentTransaction.replace(R.id.fragmentholder,fragmentoHorario);
                 fragmentTransaction.commit();
                 break;
         }
@@ -161,7 +158,7 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
 
     public void onItemClick(AdapterView<?> parent, View view, int position, long id){
         loadSelection(position);
-        drawerLayout.closeDrawer(navList);
+        //drawerLayout.closeDrawer(navList);
 
     }
 }
