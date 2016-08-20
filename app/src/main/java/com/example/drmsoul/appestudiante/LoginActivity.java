@@ -150,8 +150,20 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      */
 
     public void ingresoEstudiante(View v) {
-        Intent intent = new Intent(context, PantallaPrincipalEstudiante.class);
-        startActivity(intent);
+        EditText username = (EditText) v.findViewById(R.id.email);
+        EditText password = (EditText) v.findViewById(R.id.password);
+        String Uservalue =username.getText().toString();
+        String Passvalue =password.getText().toString();
+        Intent mServiceIntent = new Intent(context, LoginService.class);
+        mServiceIntent.putExtra("User",Uservalue);
+        mServiceIntent.putExtra("Password",Passvalue);
+
+        startService(mServiceIntent);
+
+        //mServiceIntent.setData(Uri.parse(dataUrl));
+
+        //Intent intent = new Intent(context, PantallaPrincipalEstudiante.class);
+        //startActivity(intent);
     }
 
     public void registrar(View v) {
