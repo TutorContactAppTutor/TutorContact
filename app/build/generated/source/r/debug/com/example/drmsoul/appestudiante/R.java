@@ -2698,9 +2698,9 @@ containing a value of this type.
         public static final int design_navigation_item_subheader=0x7f04002a;
         public static final int design_navigation_menu=0x7f04002b;
         public static final int design_navigation_menu_item=0x7f04002c;
-        public static final int fragment_fragment__horario__disponible=0x7f04002d;
-        public static final int fragment_horario=0x7f04002e;
-        public static final int horario_item=0x7f04002f;
+        public static final int fragment_horario=0x7f04002d;
+        public static final int horario_disponible=0x7f04002e;
+        public static final int horario_item1=0x7f04002f;
         public static final int notification_media_action=0x7f040030;
         public static final int notification_media_cancel_action=0x7f040031;
         public static final int notification_template_big_media=0x7f040032;

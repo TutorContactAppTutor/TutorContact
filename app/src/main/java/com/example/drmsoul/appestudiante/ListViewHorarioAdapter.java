@@ -47,7 +47,7 @@ public class ListViewHorarioAdapter extends BaseAdapter{
         // TODO Auto-generated method stub
         ViewHolder holder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.horario_item, null);
+            convertView = mInflater.inflate(R.layout.horario_item1, null);
             holder = new ViewHolder();
             holder.txthoraInicio = (TextView) convertView.findViewById(R.id.textViewHoraInicio);
             holder.txthoraFin = (TextView) convertView.findViewById(R.id.textViewHoraFin);

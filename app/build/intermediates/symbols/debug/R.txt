@@ -827,9 +827,9 @@ int layout design_navigation_item_separator 0x7f040029
 int layout design_navigation_item_subheader 0x7f04002a
 int layout design_navigation_menu 0x7f04002b
 int layout design_navigation_menu_item 0x7f04002c
-int layout fragment_fragment__horario__disponible 0x7f04002d
-int layout fragment_horario 0x7f04002e
-int layout horario_item 0x7f04002f
+int layout fragment_horario 0x7f04002d
+int layout horario_disponible 0x7f04002e
+int layout horario_item1 0x7f04002f
 int layout notification_media_action 0x7f040030
 int layout notification_media_cancel_action 0x7f040031
 int layout notification_template_big_media 0x7f040032
