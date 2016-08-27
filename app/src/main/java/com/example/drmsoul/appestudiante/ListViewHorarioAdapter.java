@@ -49,21 +49,27 @@ public class ListViewHorarioAdapter extends BaseAdapter{
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.horario_item, null);
             holder = new ViewHolder();
-            holder.txthora = (TextView) convertView.findViewById(R.id.textViewHora);
+            holder.txthoraInicio = (TextView) convertView.findViewById(R.id.textViewHoraInicio);
+            holder.txthoraFin = (TextView) convertView.findViewById(R.id.textViewHoraFin);
             holder.txtlugar = (TextView) convertView.findViewById(R.id.textViewLugar);
+
 
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.txthora.setText(listHorario.get(position).getHora());
+        holder.txthoraInicio.setText(listHorario.get(position).getHoraInicio());
+        holder.txthoraInicio.setText(listHorario.get(position).getHoraFin());
         holder.txtlugar.setText(listHorario.get(position).getLugar());
+
 
         return convertView;
     }
 
     static class ViewHolder {
-        TextView txthora, txtlugar;
+        TextView txthoraInicio,txthoraFin,txtlugar;
     }
+
+
 }

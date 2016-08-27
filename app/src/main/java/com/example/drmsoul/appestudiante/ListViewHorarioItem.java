@@ -16,27 +16,37 @@ import java.util.ArrayList;
 
 public class ListViewHorarioItem{
 
-    private String hora;
+    private String horaInicio;
+    private String horaFin;
     private String lugar;
 
     public ListViewHorarioItem() {
     }
 
-    public ListViewHorarioItem(String hora,String lugar) {
-        this.hora = hora;
+    public ListViewHorarioItem(String horaInicio,String horaFin,String lugar) {
+        this.horaInicio = horaInicio;
+        this.horaFin = horaFin;
         this.lugar=lugar;
     }
 
-    public String getHora() {
-        return hora;
+    public String getHoraInicio() {
+        return horaInicio;
+    }
+
+    public void setHoraInicio(String horaInicio) {
+        this.horaInicio = horaInicio;
+    }
+
+    public String getHoraFin() {
+        return horaFin;
+    }
+
+    public void setHoraFin(String horaFin) {
+        this.horaFin = horaFin;
     }
 
     public String getLugar() {
         return lugar;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
     }
 
     public void setLugar(String lugar) {
