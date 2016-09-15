@@ -41,6 +41,7 @@
                 android:value="com.example.drmsoul.appestudiante.LoginActivity" />
         </activity>
         <activity android:name="com.example.drmsoul.appestudiante.PantallaPrincipalEstudiante" />
+        <activity android:name="com.example.drmsoul.appestudiante.registro_opcion_perfil" />
     </application>
 
 </manifest>

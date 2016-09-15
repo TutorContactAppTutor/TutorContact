@@ -301,7 +301,7 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="action_sign_in_tutor">Ingreso Tutor</string>
     <string name="apellido">Apellido</string>
-    <string name="app_name">Ingreso de Estudiante</string>
+    <string name="app_name">Tutor Contact</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="carrera">¿De qué carrera es tutor?</string>

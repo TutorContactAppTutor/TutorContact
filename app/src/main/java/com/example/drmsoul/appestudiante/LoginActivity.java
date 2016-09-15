@@ -85,8 +85,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
-        mEmailSignInButton.setOnClickListener(new OnClickListener() {
+        Button btnIniciarSesion = (Button) findViewById(R.id.btnSignIn);
+        btnIniciarSesion.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 //attemptLogin();
@@ -166,16 +166,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         //startActivity(intent);
     }
 
-    public void registrar(View v) {
-        Intent intent = new Intent(context, registro.class);
+    public void registrarse(View v) {
+        Intent intent = new Intent(context, registro_opcion_perfil.class);
         startActivity(intent);
     }
 
-
-    public void registrarTutor(View v) {
-        Intent intent = new Intent(context, RegistroTutor.class);
-        startActivity(intent);
-    }
 
     private void attemptLogin() {
         if (mAuthTask != null) {

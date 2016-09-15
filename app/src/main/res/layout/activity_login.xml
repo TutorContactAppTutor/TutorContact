@@ -70,42 +70,27 @@
 
             </android.support.design.widget.TextInputLayout>
 
+
+
             <Button
-                android:id="@+id/sign_in_estudiante"
+                android:id="@+id/btnSignIn"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in_estudiante"
-                android:onClick="ingresoEstudiante"
+                android:text="Iniciar Sesion"
                 android:textStyle="bold"
-                android:enabled="true" />
-
-            <Button
-                android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/action_sign_in_tutor"
-                android:textStyle="bold"
-                android:enabled="true" />
+                android:enabled="true"
+                android:onClick="iniciarSesion"/>
 
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Registro Estudiante"
+                android:text="Registrarse"
                 android:id="@+id/reg_button"
                 android:layout_gravity="center_horizontal"
-                android:onClick="registrar" />
+                android:onClick="registrarse" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Registro Tutor"
-                android:id="@+id/reg_tutor_button"
-                android:layout_gravity="center_horizontal"
-                android:onClick="registrarTutor" />
 
         </LinearLayout>
     </ScrollView>

@@ -28,16 +28,16 @@
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_navigation_menu_item.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/select_dialog_singlechoice_material.xml"
+        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_list_menu_item_radio.xml"
+        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
@@ -112,6 +112,10 @@
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_alert_dialog_material.xml"
     },
     {
+        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/activity_registro_opcion_perfil.xml",
+        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/src/main/res/layout/activity_registro_opcion_perfil.xml"
+    },
+    {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_list_menu_item_layout.xml"
     },
@@ -128,12 +132,12 @@
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/activity_horario_disponible.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/src/main/res/layout/activity_horario_disponible.xml"
-    },
-    {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/activity_horario_disponible.xml",
+        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/src/main/res/layout/activity_horario_disponible.xml"
     },
     {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
@@ -228,12 +232,12 @@
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/activity_pantalla_principal_tutor.xml",
-        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/src/main/res/layout/activity_pantalla_principal_tutor.xml"
-    },
-    {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
         "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/activity_pantalla_principal_tutor.xml",
+        "source": "/home/darkspines/AndroidStudioProjects/TutorContact/app/src/main/res/layout/activity_pantalla_principal_tutor.xml"
     },
     {
         "merged": "/home/darkspines/AndroidStudioProjects/TutorContact/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
