@@ -16,7 +16,13 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.io.BufferedWriter;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
@@ -64,6 +70,8 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
         drawerLayout = (DrawerLayout)findViewById(R.id.drawerlayout);
 
         navList = (ListView )findViewById(R.id.navlist);
+
+        serviceThread1 = new useService2();
 
         ArrayList<String> navArray = new ArrayList<String>();
         navArray.add("Lunes");
@@ -194,12 +202,10 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
 
         switch(w.getId()) {
             case 0:
-                serviceThread1 = new useService2();
+
                 String cont = m_insert_slot+"?id_tutor_horario=2&hora_inicio=08h30&hora_fin=09h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
 
                 serviceThread1.execute(cont, "1");
-
-                System.out.println("hola1");
                 break;
             case 1:
                 String cont2 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=09h30&hora_fin=10h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
@@ -253,6 +259,79 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
             if (params[1] == "1"){  // INSERT slot
 
 
+                try {
+                    HttpURLConnection urlConn;
+
+                    DataOutputStream printout;
+                    DataInputStream input;
+
+                    urlConn = (HttpURLConnection) url.openConnection();
+                    urlConn.setDoInput(true);
+                    urlConn.setDoOutput(true);
+                    urlConn.setUseCaches(false);
+                    urlConn.setRequestProperty("Content-Type", "application/json");
+                    urlConn.setRequestProperty("Accept", "application/json");
+                    urlConn.connect();
+                    //Creo el Objeto JSON
+                    JSONObject jsonParam = new JSONObject();
+
+
+
+                        jsonParam.put("id_tutor_horario",2);
+                        jsonParam.put("hora_inicio","08h30");
+                        jsonParam.put("hora_fin","08h30");
+                        jsonParam.put("lugar",lug);
+                        jsonParam.put("estado_slot",true);
+                         jsonParam.put("estado_reserva",false);
+
+                    // Envio los parámetros post.
+                    OutputStream os = urlConn.getOutputStream();
+                    BufferedWriter writer = new BufferedWriter(
+                            new OutputStreamWriter(os, "UTF-8"));
+                    writer.write(jsonParam.toString());
+                    writer.flush();
+                    writer.close();
+
+                    int respuesta = urlConn.getResponseCode();
+
+
+                    StringBuilder result = new StringBuilder();
+                    System.out.println("Prueba...");
+
+
+                    if (respuesta == HttpURLConnection.HTTP_OK) {
+                        System.out.println("...Fin");
+
+                        String line;
+                        BufferedReader br=new BufferedReader(new InputStreamReader(urlConn.getInputStream()));
+                        while ((line=br.readLine()) != null) {
+                            result.append(line);
+                            //response+=line;
+                        }
+
+
+                        //Creamos un objeto JSONObject para poder acceder a los atributos (campos) del objeto.
+                        JSONObject respuestaJSON = new JSONObject(result.toString());  //Creo un JSONObject a partir del StringBuilder pasado a cadena
+                        //Accedemos al vector de resultados
+
+                        String resultJSON = respuestaJSON.getString("estado");   // estado es el nombre del campo en el JSON
+                        System.out.println("EStado= "+resultJSON);
+                        if (resultJSON.equals("1")) {      // hay un alumno que mostrar
+                            System.out.println("Caso "+ " insertado correctamente");
+
+                        } else if (resultJSON.equals("2")) {
+                            System.out.println("Caso "+ " pudo insertarse");
+                        }
+
+                    }
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
 
             }else if (params[1] == "2"){ // RETURN slot
                 try {
