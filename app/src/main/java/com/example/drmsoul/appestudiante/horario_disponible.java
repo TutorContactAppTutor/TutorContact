@@ -202,46 +202,52 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
 
         switch(w.getId()) {
             case 0:
+                System.out.println("Se escogio el boton 1");
+                /*String cont = m_insert_slot+"?id_tutor_horario=2&hora_inicio=08h30&hora_fin=09h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
 
-                String cont = m_insert_slot+"?id_tutor_horario=2&hora_inicio=08h30&hora_fin=09h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
-
-                serviceThread1.execute(cont, "1");
+                serviceThread1.execute(cont, "1");*/
                 break;
             case 1:
-                String cont2 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=09h30&hora_fin=10h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
+                System.out.println("Se escogio el boton 2");
+                /*String cont2 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=09h30&hora_fin=10h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
 
-                serviceThread1.execute(cont2, "1");
+                serviceThread1.execute(cont2, "1");*/
                 break;
             case 2:
-                String cont3 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=10h30&hora_fin=11h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
+                System.out.println("Se escogio el boton 3");
+                /*String cont3 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=10h30&hora_fin=11h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
 
-                serviceThread1.execute(cont3, "1");
+                serviceThread1.execute(cont3, "1");*/
                 break;
             case 3:
-                String cont4 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=11h30&hora_fin=12h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
+                System.out.println("Se escogio el boton 4");
+                /*String cont4 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=11h30&hora_fin=12h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
 
-                serviceThread1.execute(cont4, "1");
+                serviceThread1.execute(cont4, "1");*/
                 break;
             case 4:
-                String cont5 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=12h30&hora_fin=13h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
+                System.out.println("Se escogio el boton 5");
+                /*String cont5 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=12h30&hora_fin=13h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
 
-                serviceThread1.execute(cont5, "1");
+                serviceThread1.execute(cont5, "1");*/
                 break;
             case 5:
+                System.out.println("Se escogio el boton 6");
+                /*String cont6 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=13h30&hora_fin=14h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
 
-                String cont6 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=13h30&hora_fin=14h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
-
-                serviceThread1.execute(cont6, "1");
+                serviceThread1.execute(cont6, "1");*/
                 break;
             case 6:
-                String cont7 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=14h30&hora_fin=15h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
+                System.out.println("Se escogio el boton 7");
+                /*String cont7 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=14h30&hora_fin=15h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
 
-                serviceThread1.execute(cont7, "1");
+                serviceThread1.execute(cont7, "1");*/
                 break;
             case 7:
-                String cont8 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=15h30&hora_fin=16h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
+                System.out.println("Se escogio el boton 8");
+                /*String cont8 = m_insert_slot+"?id_tutor_horario=2&hora_inicio=15h30&hora_fin=16h30&lugar="+lug+"&estado_slot=1&estado_reserva=0";
 
-                serviceThread1.execute(cont8, "1");
+                serviceThread1.execute(cont8, "1");*/
                 break;
         }
     }
