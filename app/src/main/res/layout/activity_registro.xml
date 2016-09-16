@@ -41,7 +41,6 @@
             android:hint="Please enter password"
             android:enabled="true"
             android:textAlignment="center"
-            android:password="false"
             android:inputType="textPassword" />
 
         <EditText
@@ -50,7 +49,6 @@
             android:hint="Nombre"
             android:id="@+id/nombreTxt"
             android:layout_gravity="center_horizontal"
-            android:editable="false"
             android:enabled="true"
             android:textAlignment="center" />
 
@@ -60,7 +58,6 @@
             android:hint="Telefono"
             android:id="@+id/telTxt"
             android:layout_gravity="center_horizontal"
-            android:editable="false"
             android:enabled="true"
             android:textAlignment="center" />
 
