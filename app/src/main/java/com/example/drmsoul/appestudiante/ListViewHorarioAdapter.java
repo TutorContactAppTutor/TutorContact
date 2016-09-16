@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -52,23 +53,23 @@ public class ListViewHorarioAdapter extends BaseAdapter{
             holder.txthoraInicio = (TextView) convertView.findViewById(R.id.textViewHoraInicio);
             holder.txthoraFin = (TextView) convertView.findViewById(R.id.textViewHoraFin);
             holder.txtlugar = (TextView) convertView.findViewById(R.id.textViewLugar);
-
+            holder.btn = (Button) convertView.findViewById(R.id.skipButton);
 
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.txthoraInicio.setText(listHorario.get(position).getHoraInicio());
-        holder.txthoraInicio.setText(listHorario.get(position).getHoraFin());
-        holder.txtlugar.setText(listHorario.get(position).getLugar());
-
+        holder.txthoraInicio.setText("Hora Inicio: "+listHorario.get(position).getHoraInicio());
+        holder.txthoraFin.setText("Hora Fin:"+listHorario.get(position).getHoraFin());
+        holder.txtlugar.setText("Lugar:"+listHorario.get(position).getLugar());
+        holder.btn.setId(position);
 
         return convertView;
     }
 
     static class ViewHolder {
-        TextView txthoraInicio,txthoraFin,txtlugar;
+        TextView txthoraInicio,txthoraFin,txtlugar,btn;
     }
 
 

@@ -25,6 +25,7 @@
     <string name="horario_disponible">Horarios Disponibles</string>
     <string name="salir">Salir</string>
     <string name="cerrar">Cerrar sesión</string>
+    <string name="regresar1">Menú Tutor</string>
     <string name="abrirfragment">Abrir</string>
     <string name="cerrarfragment">Cerrar</string>
 

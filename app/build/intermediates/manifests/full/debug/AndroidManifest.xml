@@ -43,6 +43,7 @@
         </activity>
         <activity android:name="com.example.drmsoul.appestudiante.PantallaPrincipalEstudiante" />
         <activity android:name="com.example.drmsoul.appestudiante.registro_opcion_perfil" />
+        <activity android:name="com.example.drmsoul.appestudiante.DefinirLugarReunion" />
     </application>
 
 </manifest>

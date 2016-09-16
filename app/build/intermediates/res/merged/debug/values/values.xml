@@ -323,6 +323,7 @@
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="registrarse">Registrarse</string>
+    <string name="regresar1">Menú Tutor</string>
     <string name="salir">Salir</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="usuario">Usuario</string>

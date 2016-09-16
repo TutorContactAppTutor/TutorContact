@@ -21,6 +21,10 @@ public class ListViewHorarioItem{
     private String lugar;
 
     public ListViewHorarioItem() {
+
+        this.horaInicio = "";
+        this.horaFin = "";
+        this.lugar="";
     }
 
     public ListViewHorarioItem(String horaInicio,String horaFin,String lugar) {

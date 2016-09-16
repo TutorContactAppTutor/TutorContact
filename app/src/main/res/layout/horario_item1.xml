@@ -6,11 +6,14 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal">
 
+
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TextView
             android:layout_alignParentLeft="true"
@@ -23,39 +26,27 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewHoraInicio"
             android:text=""
             android:id="@+id/textViewHoraFin" />
-    </LinearLayout>
-
-
-
-
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
 
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:layout_marginTop="20dp"
             android:id="@+id/textViewLugar"/>
 
-        <Button android:text="Guardar Hilo"
+        <Button android:text="Habilitar"
             android:layout_alignParentLeft="true"
             android:id="@+id/skipButton"
             android:layout_below="@+id/textViewLugar"
             android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_width="100dp"
-            android:onClick="guardarHilo">
+            android:onClick="guardarHorario">
         </Button>
+
     </LinearLayout>
 
 
