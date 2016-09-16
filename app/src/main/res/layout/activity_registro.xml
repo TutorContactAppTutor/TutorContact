@@ -28,7 +28,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
+            android:id="@+id/emailTxt"
             android:layout_gravity="center_horizontal"
             android:enabled="true"
             android:hint="Email"
@@ -37,7 +37,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText2"
+            android:id="@+id/passTxt"
             android:hint="Please enter password"
             android:enabled="true"
             android:textAlignment="center"
@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre"
-            android:id="@+id/editText3"
+            android:id="@+id/nombreTxt"
             android:layout_gravity="center_horizontal"
             android:editable="false"
             android:enabled="true"
@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Telefono"
-            android:id="@+id/editText4"
+            android:id="@+id/telTxt"
             android:layout_gravity="center_horizontal"
             android:editable="false"
             android:enabled="true"
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Registrar"
-            android:id="@+id/button"
+            android:id="@+id/regbutton"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </RelativeLayout>
