@@ -45,7 +45,7 @@ public class PantallaPrincipalTutor extends AppCompatActivity {
     }
 
     public void horasDisponibles(View v) {
-        Intent intent = new Intent(context, horario_disponible.class);
+        Intent intent = new Intent(context, DefinirLugarReunion.class);
         startActivity(intent);
     }
 }

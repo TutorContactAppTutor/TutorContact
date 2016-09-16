@@ -85,8 +85,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
-        mEmailSignInButton.setOnClickListener(new OnClickListener() {
+        Button btnIniciarSesion = (Button) findViewById(R.id.btnSignIn);
+        btnIniciarSesion.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 //attemptLogin();
@@ -150,20 +150,27 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      */
 
     public void ingresoEstudiante(View v) {
-        Intent intent = new Intent(context, PantallaPrincipalEstudiante.class);
+        EditText username = (EditText) v.findViewById(R.id.email);
+        EditText password = (EditText) v.findViewById(R.id.password);
+        String Uservalue =username.getText().toString();
+        String Passvalue =password.getText().toString();
+        Intent mServiceIntent = new Intent(context, LoginService.class);
+        mServiceIntent.putExtra("User",Uservalue);
+        mServiceIntent.putExtra("Password",Passvalue);
+
+        startService(mServiceIntent);
+
+        //mServiceIntent.setData(Uri.parse(dataUrl));
+
+        //Intent intent = new Intent(context, PantallaPrincipalEstudiante.class);
+        //startActivity(intent);
+    }
+
+    public void registrarse(View v) {
+        Intent intent = new Intent(context, registro_opcion_perfil.class);
         startActivity(intent);
     }
 
-    public void registrar(View v) {
-        Intent intent = new Intent(context, registro.class);
-        startActivity(intent);
-    }
-
-
-    public void registrarTutor(View v) {
-        Intent intent = new Intent(context, RegistroTutor.class);
-        startActivity(intent);
-    }
 
     private void attemptLogin() {
         if (mAuthTask != null) {
