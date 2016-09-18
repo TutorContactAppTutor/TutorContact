@@ -30,7 +30,24 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +56,12 @@ import static android.Manifest.permission.READ_CONTACTS;
 /**
  * A login screen that offers login via email/password.
  */
+
+
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
+
+
+
     final Context context = this;
     /**
      * Id to identity READ_CONTACTS permission request.
@@ -89,9 +111,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         btnIniciarSesion.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                //attemptLogin();
-                Intent intent = new Intent(context,PantallaPrincipalTutor.class);
-                startActivity(intent);
+                attemptLogin();
+                //Intent intent = new Intent(context,PantallaPrincipalTutor.class);
+                //startActivity(intent);
             }
         });
 
@@ -171,6 +193,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         startActivity(intent);
     }
 
+    public void loginEstudiante(){
+        Intent intent = new Intent(context, PantallaPrincipalEstudiante.class);
+        startActivity(intent);
+    }
+
+    public void loginTutor(){
+        Intent intent = new Intent(context, PantallaPrincipalTutor.class);
+        startActivity(intent);
+    }
+
 
     private void attemptLogin() {
         if (mAuthTask != null) {
@@ -200,11 +232,17 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
-        } else if (!isEmailValid(email)) {
+        }
+
+        if (TextUtils.isEmpty(password)) {
+            mPasswordView.setError(getString(R.string.error_field_required));
+            focusView = mPasswordView;
+            cancel = true;
+        }/*else if (!isEmailValid(email)) {
             mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
-        }
+        }*/
 
         if (cancel) {
             // There was an error; don't attempt login and focus the first
@@ -213,9 +251,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         } else {
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
-            showProgress(true);
-            mAuthTask = new UserLoginTask(email, password);
-            mAuthTask.execute((Void) null);
+            //showProgress(true);
+            mAuthTask = new UserLoginTask();
+            mAuthTask.execute(email, password);
         }
     }
 
@@ -323,7 +361,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * Represents an asynchronous login/registration task used to authenticate
      * the user.
      */
-    public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
+    /*public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 
         private final String mEmail;
         private final String mPassword;
@@ -374,6 +412,128 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask = null;
             showProgress(false);
         }
+    }*/
+
+    public class UserLoginTask extends AsyncTask <String,Void,String>{
+
+        String ip = "http://logicmathematic.com/sw";
+        String m_get_id_usuario = ip+"/get_id_usuario.php";
+        String m_get_perfil = ip+"/get_nombre_perfil.php";
+        String query2 = m_get_perfil+"?id_usuario=";
+        @Override
+        protected String doInBackground(String... params) {
+            String usuario = params[0];
+            String clave = params[1];
+            System.out.println("ingreso al servicio");
+
+            String query1 = m_get_id_usuario+"?usuario="+usuario+"&clave="+clave;
+
+            String usua = "";
+            String perfil = "";
+
+            //AGREGAR USUARIO
+            //insertDatos(params[0], params[1], params[2], params[3], "", "");
+
+            //BUSCAR USUARIO INGRESADO
+            usua = consulta(query1, "1");
+            query2+= usua;
+
+            perfil = consulta(query2, "2");
+
+
+
+
+            return perfil;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            if (s.equals("estudiante")){
+                Toast.makeText(getApplicationContext(), "Login Exitoso", Toast.LENGTH_SHORT).show();
+                loginEstudiante();
+            } else if (s.equals("tutor")) {
+                Toast.makeText(getApplicationContext(), "Login Exitoso", Toast.LENGTH_SHORT).show();
+                loginTutor();
+            } else {
+                Toast.makeText(getApplicationContext(), "Login Fallido... "+s, Toast.LENGTH_SHORT).show();
+            }
+
+
+
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
+        protected void onCancelled(String s) {
+            super.onCancelled(s);
+        }
+
+
+
+    public String consulta(String cadena, String caso){
+        String resulS = "";
+
+        try {
+            URL url = new URL(cadena);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection(); //Abrir la conexión
+            connection.setRequestProperty("User-Agent", "Mozilla/5.0" +
+                    " (Linux; Android 1.5; es-ES) Ejemplo HTTP");
+            //connection.setHeader("content-type", "application/json");
+
+            int respuesta = connection.getResponseCode();
+            StringBuilder result = new StringBuilder();
+
+            if (respuesta == HttpURLConnection.HTTP_OK){
+                //System.out.println("Ingreso aqui");
+
+                InputStream in = new BufferedInputStream(connection.getInputStream());  // preparo la cadena de entrada
+
+                BufferedReader reader = new BufferedReader(new InputStreamReader(in));  // la introduzco en un BufferedReader
+
+
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    result.append(line);        // Paso toda la entrada al StringBuilder
+                }
+
+                //Creamos un objeto JSONObject para poder acceder a los atributos (campos) del objeto.
+                JSONObject respuestaJSON = new JSONObject(result.toString());   //Creo un JSONObject a partir del StringBuilder pasado a cadena
+                //Accedemos al vector de resultados
+
+                String resultJSON = respuestaJSON.getString("estado");   // estado es el nombre del campo en el JSON
+                //System.out.println("EStado= "+resultJSON);
+
+                if (resultJSON.equals("1")){      // hay un alumno que mostrar
+                    if (caso.equals("1")){
+                        resulS = respuestaJSON.getJSONObject("usuario").getString("id");
+                    }else if(caso.equals("2")){
+                        resulS = respuestaJSON.getJSONObject("perfil_usuario").getString("nombre");
+                    }
+
+                }
+                else if (resultJSON.equals("2")){
+                    System.out.println("No existe el registro");
+                }
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
+        return resulS;
     }
+}
 }
 
